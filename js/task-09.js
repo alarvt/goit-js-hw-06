@@ -10,7 +10,9 @@ const refs = {
   chengeColor: document.querySelector(".change-color"),
 };
 
-refs.chengeColor.addEventListener("click", (event) => {
-  refs.colorEl.textContent = getRandomHexColor ();
+refs.chengeColor.addEventListener("click", () => { 
+    
+    document.body.style.backgroundColor = getRandomHexColor();    
+    refs.colorEl.textContent = document.body.style.backgroundColor;
 });
 
